@@ -1,0 +1,9 @@
+[submodule "components/railsblocks-theme"]
+	path = components/railsblocks-theme
+	url = git@github.com:railsblocks/theme.git
+[submodule "components/railsblocks-theme-boostrap"]
+	path = components/railsblocks-theme-boostrap
+	url = git@github.com:railsblocks/theme-bootstrap.git
+[submodule "components/railsblocks-theme-boostrap-zertico"]
+	path = components/railsblocks-theme-boostrap-zertico
+	url = git@github.com:railsblocks/theme-bootstrap-zertico.git
