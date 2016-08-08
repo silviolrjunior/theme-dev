@@ -47,6 +47,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-path './components' do
-  gem 'railsblocks-theme-boostrap-zertico'
+path 'components' do
+  gem 'railsblocks-theme'
+  gem 'railsblocks-theme-bootstrap'
+  gem 'railsblocks-theme-bootstrap-zertico'
 end
