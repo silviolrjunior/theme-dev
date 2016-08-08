@@ -21,3 +21,4 @@
 .byebug_history
 /vendor/cache
 /vendor/bundle
+/public/assets

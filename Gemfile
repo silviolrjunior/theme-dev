@@ -52,3 +52,7 @@ path 'components' do
   gem 'railsblocks-theme-bootstrap'
   gem 'railsblocks-theme-bootstrap-zertico'
 end
+
+gem 'bootstrap-sass'
+gem 'cells-rails'
+gem 'sassc-rails'
