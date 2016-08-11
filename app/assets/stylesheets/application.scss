@@ -126,3 +126,18 @@ body {
 .c-alert-link{
   @extend .alert-link
 }
+
+// PANEL
+
+.c-panel{
+  @extend .panel;
+  @extend .panel-default;
+}
+
+.c-panel-title{
+  @extend .panel-heading;
+}
+
+.c-panel-content{
+  @extend .panel-body;
+}
