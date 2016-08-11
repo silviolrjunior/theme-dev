@@ -55,4 +55,6 @@ end
 
 gem 'bootstrap-sass'
 gem 'cells-rails'
+gem 'cells-erb'
+gem 'trailblazer-rails'
 gem 'sassc-rails'
