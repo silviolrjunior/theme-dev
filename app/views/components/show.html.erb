@@ -4,155 +4,249 @@
     border: 2px solid white;
   }
 </style>
-<%= Theme::Layout::Wrapper::Cell.new(fluid: true, klass: "my_class").() do %>
-  <% html = Theme::Layout::Cols::Cell.new(md: {col: 12}).() do %>
+
+<%= theme_wrapper(fluid: true, klass: "my_class") do %>
+  <% html = theme_col(md: {col: 12}) do %>
     <% "<h2>GRID</h2>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 2}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 2}, klass: "show-grid") do %>
     <% "<h3>COL 2</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 2}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 2}, klass: "show-grid") do %>
     <% "<h3>COL 2</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 2}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 2}, klass: "show-grid") do %>
     <% "<h3>COL 2</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 2}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 2}, klass: "show-grid") do %>
     <% "<h3>COL 2</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 2}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 2}, klass: "show-grid") do %>
     <% "<h3>COL 2</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 2}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 2}, klass: "show-grid") do %>
     <% "<h3>COL 2</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 3}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 3}, klass: "show-grid") do %>
     <% "<h3>COL 3</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 3}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 3}, klass: "show-grid") do %>
     <% "<h3>COL 3</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 3}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 3}, klass: "show-grid") do %>
     <% "<h3>COL 3</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 3}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 3}, klass: "show-grid") do %>
     <% "<h3>COL 3</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 4}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 4}, klass: "show-grid") do %>
     <% "<h3>COL 4</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 4}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 4}, klass: "show-grid") do %>
     <% "<h3>COL 4</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 4}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 4}, klass: "show-grid") do %>
     <% "<h3>COL 4</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 5}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 5}, klass: "show-grid") do %>
     <% "<h3>COL 5</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 7}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 7}, klass: "show-grid") do %>
     <% "<h3>COL 7</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 6}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 6}, klass: "show-grid") do %>
     <% "<h3>COL 6</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 6}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 6}, klass: "show-grid") do %>
     <% "<h3>COL 6</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 7}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 7}, klass: "show-grid") do %>
     <% "<h3>COL 7</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 5}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 5}, klass: "show-grid") do %>
     <% "<h3>COL 5</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 8}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 8}, klass: "show-grid") do %>
     <% "<h3>COL 8</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 4}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 4}, klass: "show-grid") do %>
     <% "<h3>COL 4</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 9}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 9}, klass: "show-grid") do %>
     <% "<h3>COL 9</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 3}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 3}, klass: "show-grid") do %>
     <% "<h3>COL 3</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 10}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 10}, klass: "show-grid") do %>
     <% "<h3>COL 10</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 2}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 2}, klass: "show-grid") do %>
     <% "<h3>COL 2</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 11}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 11}, klass: "show-grid") do %>
     <% "<h3>COL 11</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 1}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 1}, klass: "show-grid") do %>
     <% "<h3>COL 1</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 12}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 12}, klass: "show-grid") do %>
     <% "<h3>COL 12</h3>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 9, glide: 3}, klass: "show-grid").() do %>
+  <% html += theme_col(md: {col: 9, glide: 3}, klass: "show-grid") do %>
     <% "<h3>COL 9 GLIDE 3 </h3>" %>
   <% end %>
 
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 12}).() do %>
+  <% html += theme_col(md: {col: 12}) do %>
     <% "<h2>ALERT</h2>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 12}, klass: "l-m-t-l").() do %>
-    <% html_alert = Theme::Component::Alert::Cell.new(text: "Default example. Click <here, http://my.link.com>").() %>
-    <% html_alert += Theme::Component::Alert::Cell.new(type: "info", text: "Info example. Click <here, http://my.link.com>").() %>
-    <% html_alert += Theme::Component::Alert::Cell.new(type: "success", text: "Success example. Click <here, http://my.link.com>").() %>
+
+  <% html += theme_col(md: {col: 12}, klass: "l-m-t-l") do %>
+    <% html_alert = theme_alert(text: "Default example. Click <here, http://my.link.com>") %>
+    <% html_alert += theme_alert(type: "info", text: "Info example. Click <here, http://my.link.com>") %>
+    <% html_alert += theme_alert(type: "success", text: "Success example. Click <here, http://my.link.com>") %>
     <% html_alert %>
-    <% html_alert += Theme::Component::Alert::Cell.new(type: "danger", text: "Danger example. Click <here, http://my.link.com>").() %>
+    <% html_alert += theme_alert(type: "danger", text: "Danger example. Click <here, http://my.link.com>")%>
     <% html_alert %>
-    <% html_alert += Theme::Component::Alert::Cell.new(type: "warning", text: "Warning example. Click <here, http://my.link.com>").() %>
+    <% html_alert += theme_alert(type: "warning", text: "Warning example. Click <here, http://my.link.com>") %>
     <% html_alert %>
   <% end %>
 
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 12}).() do %>
+  <% html += theme_col(md: {col: 12}) do %>
+    <% html_alert_usage = '<pre><h4>Usage:</h4>'.html_safe %>
+    <% html_alert_usage += 'theme_alert(text: "Default example. Click <here, http://my.link.com>")' %>
+    <% html_alert_usage += '<br>'.html_safe %>
+    <% html_alert_usage += 'theme_alert(type: "info", text: "Info example. Click <here, http://my.link.com>")' %>
+    <% html_alert_usage += '<br>'.html_safe %>
+    <% html_alert_usage += 'theme_alert(type: "success", text: "Success example. Click <here, http://my.link.com>")' %>
+    <% html_alert_usage += '<br>'.html_safe %>
+    <% html_alert_usage += 'theme_alert(type: "danger", text: "Danger example. Click <here, http://my.link.com>")' %>
+    <% html_alert_usage += '<br>'.html_safe %>
+    <% html_alert_usage += 'theme_alert(type: "danger", text: "Danger example. Click <here, http://my.link.com>")' %>
+    <% html_alert_usage += '</pre>'.html_safe %>
+    <% html_alert_usage %>
+  <% end %>
+
+  <% html += theme_col(md: {col: 12}) do %>
     <% "<h2>PANEL</h2>" %>
   <% end %>
-  <% html += Theme::Layout::Cols::Cell.new(md: {col: 12}, klass: "l-m-t-l").() do %>
-    <% Theme::Component::Panel::Cell.new(title: "My panel with content").() do %>
+  <% html += theme_col(md: {col: 12}, klass: "l-m-t-l") do %>
+    <% theme_panel(title: "My panel with content") do %>
       <% "<h3>My content</h3>" %>
     <% end %>
   <% end %>
+
+  <% html += theme_col(md: {col: 12}) do %>
+    <% html_panel_usage = '<pre><h4>Usage:</h4>'.html_safe %>
+    <% html_panel_usage += 'theme_panel(title: "My panel with content") do' %>
+    <% html_panel_usage += '<br>'.html_safe %>
+    <% html_panel_usage += '  <h3>My content</h3>' %>
+    <% html_panel_usage += '<br>'.html_safe %>
+    <% html_panel_usage += 'end' %>
+    <% html_panel_usage += '</pre>'.html_safe %>
+    <% html_panel_usage %>
+  <% end %>
+
+  <% html += theme_col(md: {col: 12}) do %>
+    <% "<h2>BUTTON</h2>" %>
+  <% end %>
+  <% html += theme_col(md: {col: 12}, klass: "l-m-t-l") do %>
+    <% html_btn = theme_button({}) do %>
+      <% "<span class='glyphicon glyphicon-ok'></span> Button with block" %>
+    <% end %>
+    <% html_btn += theme_button(text: "Without block") %>
+    <% html_btn += theme_button(text: "With tag a", tag: "a") %>
+    <% html_btn += theme_button(text: "With type", options: {type: "submit", role: "button"}) %>
+    <% html_btn += theme_button(text: "Primary", type: "primary") %>
+    <% html_btn += theme_button(text: "Info", type: "info") %>
+    <% html_btn += theme_button(text: "Success", type: "success") %>
+    <% html_btn += theme_button(text: "Danger", type: "danger") %>
+    <% html_btn += theme_button(text: "Warning", type: "warning") %>
+    <% html_btn += theme_button(text: "Link", type: "link") %>
+    <% html_btn += theme_button(text: "Small", size: "small") %>
+    <% html_btn += theme_button(text: "Medium", size: "medium") %>
+    <% html_btn += theme_button(text: "Large", size: "large") %>
+    
+    <% html_btn %>
+  <% end %>
+
+  <% html += theme_col(md: {col: 12}, klass: "l-m-t-l") do %>
+    <% html_btn_usage = '<pre><h4>Usage:</h4>'.html_safe %>
+    <% html_btn_usage += 'theme_button({}) do' %>
+    <% html_btn_usage += '<br>'.html_safe %>
+    <% html_btn_usage += '  <span class="glyphicon glyphicon-ok"></span> Button with block' %>
+    <% html_btn_usage += '<br>'.html_safe %>
+    <% html_btn_usage += 'end' %>
+    <% html_btn_usage += '<br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Without block")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "With tag a", tag: "a")")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "With type", options: {type: "submit", role: "button"})</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Primary", type: "primary")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Info", type: "info")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Success", type: "success")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Danger", type: "danger")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Warning", type: "warning")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Link", type: "link")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Small", size: "small")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Medium", size: "medium")</br>'.html_safe %>
+    <% html_btn_usage += 'theme_button(text: "Large", size: "large")</br>'.html_safe %>
+    <% html_btn_usage += '</pre>'.html_safe %>
+    <% html_btn_usage %>
+  <% end %>
+
+  <% html += theme_col(md: {col: 12}) do %>
+    <% "<h2>TABLE</h2>" %>
+  <% end %>
+  <% html += theme_col(md: {col: 12}, klass: "l-m-t-l") do %>
+    <% html_table = theme_table(options: ["striped","hover"], collection_head: ["Id", "Age", "First Name", "Last Name"], collection_body: [[1, 19, "Lorem", "ipsum"], [2, 23, "Lenna", "Roberts"], [3, 30, "Joe", "Willians"]]) %>
+    <% html_table += theme_table(options: ["bordered","hover"], collection_head: ["Id", "Age", "First Name", "Last Name"], collection_body: [[1, 19, "Lorem", "ipsum"], [2, 23, "Lenna", "Roberts"], [3, 30, "Joe", "Willians"]]) %>
+    <% html_table += theme_table(collection_head: {"Id": 5, "Age": 5, "First Name": 60, "Last Name": 30}, collection_body: [[1, 19, "Lorem", "ipsum"], [2, 23, "Lenna", "Roberts"], [3, 30, "Joe", "Willians"]]) %>
+    <% html_table %>
+  <% end %>
+
+  <% html += theme_col(md: {col: 12}) do %>
+    <% html_table_usage = '<pre><h4>Usage:</h4>'.html_safe %>
+    <% html_table_usage += 'theme_table(options: ["striped","hover"], collection_head: ["Id", "Age", "First Name", "Last Name"], collection_body: [[1, 19, "Lorem", "ipsum"], [2, 23, "Lenna", "Roberts"], [3, 30, "Joe", "Willians"]])</br>'.html_safe %>
+    <% html_table_usage += 'theme_table(options: ["bordered","hover"], collection_head: ["Id", "Age", "First Name", "Last Name"], collection_body: [[1, 19, "Lorem", "ipsum"], [2, 23, "Lenna", "Roberts"], [3, 30, "Joe", "Willians"]])</br>'.html_safe %>
+    <% html_table_usage += 'theme_table(collection_head: {"Id": 5, "Age": 5, "First Name": 60, "Last Name": 30}, collection_body: [[1, 19, "Lorem", "ipsum"], [2, 23, "Lenna", "Roberts"], [3, 30, "Joe", "Willians"]])</br>'.html_safe %>
+    <% html_table_usage += '</pre>'.html_safe %>
+    <% html_table_usage %>
+  <% end %>  
   <% html %>
 <% end %>
